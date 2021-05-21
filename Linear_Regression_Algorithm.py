@@ -28,3 +28,18 @@ def plot_regression(x,y,b):
     plt.ylabel('y - Dependent')
 
     plt.show()
+
+#Main function (Testing values)
+def main():
+    #Dataset
+    x = np.array([1,2,3,4,5])
+    y = np.array([2,3,5,6,5])
+
+    #Getting estimation coefficients
+    b = estimate_coef(x,y)
+    print('b0 = {}. b1 = {}'.format(b[0],b[1]))
+
+    plot_regression(x,y,b)
+
+if __name__ == '__main__':
+    main()
