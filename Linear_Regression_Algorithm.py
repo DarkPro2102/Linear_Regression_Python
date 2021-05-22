@@ -33,8 +33,8 @@ def plot_regression(x,y,b):
 def main():
     
     #Data set
-    x = np.array([1,2,3,4,5])
-    y = np.array([2,3,5,6,5])
+    x = np.array([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16])
+    y = np.array([2,3,5,6,5,7,8,9,4,10,11,20,15,14,16,18])
 
     #Getting estimation coefficients
     b = estimate_coef(x,y)
